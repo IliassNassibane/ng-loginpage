@@ -1,0 +1,18 @@
+p {
+  font-family: Lato;
+}
+
+#login-container {
+  height: 100%;
+  width: 100%;
+}
+
+#login-container table {
+  margin: 100px auto 0px auto;
+  position: relative;
+}
+
+line {
+  stroke:#e6e6e6;
+  stroke-width:2;
+}

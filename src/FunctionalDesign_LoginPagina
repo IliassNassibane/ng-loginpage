@@ -1,0 +1,42 @@
+Concept:
+Gewoonweg een standaard login pagina, met minimale styling...
+
+To do, Views:
+[] Inlogpagina:
+  [] Login;
+  [] Account aanmaken;
+
+To do, Inlogpagina:
+- Velden:
+  - 'Bestaand'
+    [] E-mail veld;
+    [] Wachtwoord veld;
+
+  - 'Nieuw'
+    [x] E-mail veld;
+    [x] Wachtwoord veld;
+    [] E-mailadres veld;
+    [] Beveiligingsvraag kiezen;
+    [] Antwoord;
+    [] Een progress bar, ter motivatie van het opzetten van een nieuwe account;
+
+- Knoppen:
+  [] Login-knop;
+  [] Account aanmaken;
+  [] Show password;
+  [] Captcha / Anti-bot check;
+
+- Validaties:
+  'Bestaand'
+  [] Username + Wachtwoord 
+    [] Username is niet aanwezig in de mock-db; (Maar wordt pas gevalideerd nadat er een combinatie is opgestuurd via een GET)
+    + Verkeerde wachtwoord ingevoerd voor de ingevoerd;
+  
+  'Nieuw'
+  [] Wachtwoord:
+    [] Moet minimaal één grote letter;
+    [] Moet minimaal één kleine letter;
+    [] Moet minimaal één speciale teken;
+    [] Moet minstens één getal;
+    [] Mag niet hetzelfde zijn als het emailadres;
+    [] Tekens mogen niet zichtbaar zijn voor de gebruiker, tenzij er snel op een knopje naast het wachtwoord veld wordt gedrukt om de tekens om te zetten naar een leesbare

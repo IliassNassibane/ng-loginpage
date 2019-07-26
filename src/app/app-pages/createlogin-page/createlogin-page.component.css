@@ -1,0 +1,21 @@
+td {
+  padding: 5px 15px 5px 15px;
+}
+
+label {
+  font-size: 12px;
+  font-family: Lato;
+  font-weight: bold;
+}
+
+input {
+  border: 1px #cccccc solid;
+  border-radius: 4px;
+  background: white;
+  display: inline-block;
+}
+
+#accNulling-container,
+#accCreation-container {
+  padding-top: 20px;
+}
