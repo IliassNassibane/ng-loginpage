@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class CreateloginPageComponent implements OnInit {
+  passcreate:string = 'logincreate-password';
+  passcreateconfrm:string = 'logincreate-password-confirm';
 
   constructor() { }
 
