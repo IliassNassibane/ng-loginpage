@@ -16,11 +16,14 @@ export class ElPasswordComponent implements OnInit {
   ngOnInit() {
   }
 
+  // TODO - remove when in prod.
+  /*
   private test() {
     alert(
       'Dit is this.childId: ' + this.childId.toString() 
     );
   }
+  */
 
   private showPass() {
     document.getElementById(this.childId).setAttribute("type", "text");
