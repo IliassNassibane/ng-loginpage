@@ -6,6 +6,7 @@ import { isNullOrUndefined } from 'util';
   templateUrl: './el-nulling.component.html',
   styleUrls: ['./el-nulling.component.css']
 })
+
 export class ElNullingComponent implements OnInit {
   @Input()
   idArr : Array<string>;
@@ -18,19 +19,21 @@ export class ElNullingComponent implements OnInit {
   // TODO - remove when in prod.
   /*
   private Test() {
-    var strOutput : string;
+    let strOutput : string;
+    let testStrArr : string[];
 
-    this.idArr.forEach(x => strOutput += ("\n" + x));
+    alert(testStrArr.findIndex(x => x == undefined));
+
+    this.idArr.reverse().forEach(x => strOutput += ("\nIndex " + x.indexOf.toString() + ": " + x));
 
     alert(
-      'array length is: ' + this.idArr.length +
-      '\nArray content:' + strOutput);
+      'array length is: ' + testStrArr.length +
+      '\nArray content:\n' + strOutput);
   }
   */
 
   private EmptyInput() {
-    var IdElementArr : Array<Element>;
-    IdElementArr = this.StringArrayToIDArray(); //.filter(function(i){ return i != undefined; });
+    const IdElementArr : Array<Element> = this.StringArrayToIDArray(); //.filter(function(i){ return i != undefined; });
 
     if(this.idArr.length <= 0) {
       IdElementArr.forEach(x => x.textContent = '');
@@ -40,12 +43,19 @@ export class ElNullingComponent implements OnInit {
   }
 
   private StringArrayToIDArray() : Array<Element> {
-    var outputArr : Array<Element>;
-    
-    for (let id = 0; id < this.idArr.length; id++) {
-      alert('Object ' + id + ' in array is: ' + this.idArr[id])
+    let outputArr : Array<Element>;
 
-      outputArr.push(document.getElementById(id.toString()));
+    //let usableArr = this.idArr.splice(this.idArr.indexOf(undefined), 1);
+    const usableArr : string[] = ["logincreate-mailadres", 'logincreate-password', 'logincreate-password-confirm', 'logincreate-filler'];
+
+    usableArr.splice(-1, 1);
+
+    alert(usableArr[-1]);
+
+    for (let id = 0; id < usableArr.length; id++) {
+      //alert('Object ' + id + ' in array is: ' + this.idArr[id]);
+
+      outputArr.push(document.getElementById(usableArr[id]));
     }
 
     /*

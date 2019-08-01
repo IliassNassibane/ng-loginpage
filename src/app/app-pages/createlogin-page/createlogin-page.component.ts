@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class CreateloginPageComponent implements OnInit {
   passcreate : string = 'logincreate-password';
   passcreateconfirm : string = 'logincreate-password-confirm';
-
-  IdArray : Array<string> = (['logincreate-mailadres', this.passcreate, this.passcreateconfirm, 'logincreate-filler']);
+  
+  IdArray : Array<string>; //['logincreate-mailadres', this.passcreate, this.passcreateconfirm, 'logincreate-filler'];
 
   constructor() { }
 
