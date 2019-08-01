@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class ElPasswordComponent implements OnInit {
   @Input()
-  childId: string;
+  childId : string;
 
   constructor() { 
   }

@@ -5,7 +5,7 @@
         <label>E-mailadres</label>
       </td>
       <td>
-        <input type="text">
+        <input type="text" id="logincreate-mailadres">
       </td>
     </tr>
     <tr>
@@ -21,7 +21,7 @@
         <label>Confirm password</label>
       </td>
       <td>
-        <app-el-password [childId]="passcreateconfrm"></app-el-password>
+        <app-el-password [childId]="passcreateconfirm"></app-el-password>
       </td>
     </tr>
     <tr>
@@ -29,12 +29,13 @@
         <label>Captcha</label>
       </td>
       <td>
-        <input type="text">
+        <input type="text" id="logincreate-filler">
       </td>
     </tr>
     <tr>
       <td id="accNulling-container">
-        <button>Annuleren</button>
+        <!--<button>Annuleren</button>-->
+        <app-el-nulling [idArr]="IdArray"></app-el-nulling>
       </td>
       <td id="accCreation-container">
         <button>Account Aanmaken</button>

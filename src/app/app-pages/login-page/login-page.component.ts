@@ -8,7 +8,7 @@ import { ElPasswordComponent } from '../../app-elements/el-password/el-password.
 })
 
 export class LoginPageComponent implements OnInit {
-  password:string = 'login-password';
+  password : string = 'login-password';
 
   constructor() { }
 
