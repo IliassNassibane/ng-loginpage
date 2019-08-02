@@ -10,9 +10,11 @@ export class CreateloginPageComponent implements OnInit {
   passcreate : string = 'logincreate-password';
   passcreateconfirm : string = 'logincreate-password-confirm';
   
-  IdArray : Array<string>; //['logincreate-mailadres', this.passcreate, this.passcreateconfirm, 'logincreate-filler'];
+  IdArray : string[] = new Array();
 
-  constructor() { }
+  constructor() { 
+    //this.IdArray.push('logincreate-mailadres', this.passcreate, this.passcreateconfirm, 'logincreate-filler');
+  }
 
   ngOnInit() {
   }
