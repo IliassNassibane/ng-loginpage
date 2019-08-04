@@ -1,45 +1,46 @@
 <div id="createlogin-container">
-  <table cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <label>E-mailadres</label>
-      </td>
-      <td>
-        <input type="text" id="logincreate-mailadres">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>Password</label>
-      </td>
-      <td>
-        <app-el-password [childId]="passcreate"></app-el-password>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>Confirm password</label>
-      </td>
-      <td>
-        <app-el-password [childId]="passcreateconfirm"></app-el-password>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>Captcha</label>
-      </td>
-      <td>
-        <input type="text" id="logincreate-filler">
-      </td>
-    </tr>
-    <tr>
-      <td id="accNulling-container">
-        <!--<button>Annuleren</button>-->
-        <app-el-nulling [idArr]="IdArray"></app-el-nulling>
-      </td>
-      <td id="accCreation-container">
-        <button>Account Aanmaken</button>
-      </td>
-    </tr>
-  </table>
+  <form id="logincreate-form">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <label>E-mailadres</label>
+        </td>
+        <td>
+          <input type="text" id="logincreate-mailadres">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Password</label>
+        </td>
+        <td>
+          <app-el-password [childId]="passcreate"></app-el-password>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Confirm password</label>
+        </td>
+        <td>
+          <app-el-password [childId]="passcreateconfirm"></app-el-password>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Captcha</label>
+        </td>
+        <td>
+          <input type="text" id="logincreate-filler">
+        </td>
+      </tr>
+      <tr>
+        <td id="accNulling-container">
+          <button (click)="formReset()">Annuleren</button>
+        </td>
+        <td id="accCreation-container">
+          <button type="submit">Account Aanmaken</button>
+        </td>
+      </tr>
+    </table>
+  </form>
 </div>

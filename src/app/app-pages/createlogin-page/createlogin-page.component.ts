@@ -9,13 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class CreateloginPageComponent implements OnInit {
   passcreate : string = 'logincreate-password';
   passcreateconfirm : string = 'logincreate-password-confirm';
-  
-  IdArray : string[] = new Array();
 
   constructor() { 
-    //this.IdArray.push('logincreate-mailadres', this.passcreate, this.passcreateconfirm, 'logincreate-filler');
   }
 
   ngOnInit() {
+  }
+
+  private formReset(){
+    let formToReset = <HTMLFormElement>document.getElementById('logincreate-form');
+    formToReset.reset();
   }
 }
