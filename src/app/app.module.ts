@@ -15,4 +15,5 @@ import { ElPasswordComponent } from './app-elements/el-password/el-password.comp
   declarations: [ AppComponent, HelloComponent, TopBarComponent, CreateloginPageComponent, LoginPageComponent, ElPasswordComponent ],
   bootstrap:    [ AppComponent ]
 })
+
 export class AppModule { }

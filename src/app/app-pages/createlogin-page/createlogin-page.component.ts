@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { CreateLoginFormService } from 'src/app/services/create-login-form.service';
 
 @Component({
   selector: 'app-createlogin-page',
   templateUrl: './createlogin-page.component.html',
-  styleUrls: ['./createlogin-page.component.css']
+  styleUrls: ['./createlogin-page.component.css'],
+  providers: [CreateLoginFormService]
 })
 
 export class CreateloginPageComponent implements OnInit {
   passcreate : string = 'logincreate-password';
   passcreateconfirm : string = 'logincreate-password-confirm';
 
-  constructor() { 
-  }
+  constructor(
+    private createLoginFormService: CreateLoginFormService
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void { 
   }
 
   private formReset(){
