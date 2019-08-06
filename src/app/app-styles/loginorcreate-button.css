@@ -1,0 +1,11 @@
+.loginorcreate-button {
+    padding: 5px 9px 5px 9px;
+    text-decoration: none;
+    border: 1px #cccccc solid;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.loginorcreate-button:active {
+    background-color: white;
+}

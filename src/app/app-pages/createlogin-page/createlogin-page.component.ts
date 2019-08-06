@@ -1,10 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CreateLoginFormService } from 'src/app/services/create-login-form.service';
 
 @Component({
   selector: 'app-createlogin-page',
   templateUrl: './createlogin-page.component.html',
-  styleUrls: ['./createlogin-page.component.css'],
+  styleUrls: [
+    './createlogin-page.component.css',
+    '../../app-styles/loginorcreate-button.css'
+  ],
   providers: [CreateLoginFormService]
 })
 

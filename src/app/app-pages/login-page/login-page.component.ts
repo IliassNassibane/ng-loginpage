@@ -4,7 +4,10 @@ import { ElPasswordComponent } from '../../app-elements/el-password/el-password.
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css']
+  styleUrls: [
+    './login-page.component.css',
+    '../../app-styles/loginorcreate-button.css'
+  ]
 })
 
 export class LoginPageComponent implements OnInit {
