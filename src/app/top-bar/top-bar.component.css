@@ -3,7 +3,7 @@ table {
 }
 
 a, h2, p {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   padding: 0;
   margin: 0;
